@@ -1,0 +1,399 @@
+body{
+    box-sizing: border-box;
+}
+#logo{
+    width: 175px;
+    height: 175px;
+}
+header{
+    height: 216px;
+    background-color: white;
+}
+
+.header-content{
+    /*position: fixed; sẽ kéo khung được cố định  */
+    top: 0;
+    left:11.5%;
+    z-index: 100;
+    margin: auto;
+   padding: 16px 10px;
+    width: 77.5%;
+    background-color: white;
+}
+#header-left{
+    justify-content: center;
+}
+#control{
+    background-color: #06660e;
+}
+#header-left{
+    border-right: 1px solid lightgray;
+}
+.free-ship{
+    font-size: 11px;
+}
+#danhmuc-container{
+    background-color: #06660e;
+    font-size: 13px;
+    padding: 12px;
+}
+#menu{
+    border-top:1px solid rgba(0,0,0,.125) ;
+    border-bottom:1px solid rgba(0,0,0,.125) ;
+
+}
+#menu-danhmucsanpham-container{
+    background-color: white;
+    position: absolute;
+    width: 292px;
+    top: 44px;
+    left: 14px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+#menu-danhmuc{
+    box-shadow: 0px 0px 11px 1px rgba(156, 154, 154, 0.356);
+    /* display: none; */
+    
+}
+#danhmuc-container{
+    
+    position: relative;
+    cursor: pointer;
+}
+#danhmuc-container:hover #menu-danhmucsanpham-container{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.list-group-item{
+   border:none;
+   font-size: 12px;
+   text-transform: uppercase;
+   font-weight: 600;
+   color: black
+   
+ }
+ .menu-item:hover{
+     cursor: pointer;
+     color: #06660e;
+    
+ }
+ a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+ }
+a:hover{
+    color: #06660e;
+    text-decoration: none;
+}
+#menu-danhmucsanpham-container{
+    background-color: blanchedalmond;
+}
+
+
+.icon-container{
+    float: right;
+    margin-top: 13px;
+}
+#makeup-items{
+    position: relative;
+}
+#sub-menu-makeup{
+    display: none;
+    position:  absolute;
+    top:0px;
+    left: 300px;
+    width: 278px;
+    z-index: 5;
+    box-shadow: 0px 0px 11px 1px rgba(156, 154, 154, 0.356)
+}
+#makeup-items:hover #sub-menu-makeup{
+    display: block;
+
+}
+.sub-menu-makeup-title{
+    padding-left: 20px;
+    font-size: 16px;
+    
+}
+
+.sub-menu-makeup-title:hover{
+    color: #1cdca2;
+}
+
+.sub-menu-makeup-content{
+    position: relative;
+}
+.sub-menu-makeup-content::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: white;
+    top: 15px;
+    left: -7px;
+    transform: rotate(45deg);
+    box-shadow: -4px 6px 6px -2px rgba(156, 154, 154, 0.356)
+
+}
+#img-banner{
+    width: 600px;
+    height: 470px;
+}
+#img-banner-right{
+    width: 100%;
+    height: 225px;
+}
+#img-banner-right-2{
+    height: 225px;
+}
+#form-login{
+    width: 328px;
+    height: 496px;
+    position: relative;
+    box-shadow: 0px 0px 11px 1px rgba(156, 154, 154, 0.356);
+    background: white;
+    padding: 16px;
+    border-radius: 5px;
+    display: none;
+}
+.title-login{
+    font-size: 12px;
+    color: gray;
+}
+#btnDangNhap,#btnDangKy{
+    background-color: #06660ec7 !important;
+    color: white;
+}
+.btn-close{
+    background-color: transparent;
+    border: none;
+}
+
+.btn-close:focus{
+    border: none;
+    outline: none;
+}
+.showModalLogin{
+    display: block !important;
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hiddenModalLogin{
+    display: none;
+}
+#content-signup{
+    display: none;
+}
+@keyframes aniOpen {
+    from {
+    opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+@keyframes aniHidden {
+    from {
+    opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+    }
+  }
+.openContentLogin{
+    display: block;
+    animation-duration: 0.3s;
+    animation-name: aniOpen;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+}
+.closeContentLogin{
+    animation-duration: 0.3s;
+    animation-name: aniHidden;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    display: none;
+}
+.closeContentSignUp{
+    animation-duration: 0.3s;
+    animation-name: aniHidden;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    display: none;
+}
+.openContentSignIn{
+    display: block !important;
+    animation-duration: 0.3s;
+    animation-name: aniOpen;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+}
+.btn-open-signup{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background-color: transparent;
+    border: none;
+    color: #06660ec7;
+    font-size: 12px;
+    width: 100%;
+    
+}
+
+.btn-open-login{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background-color: transparent;
+    border: none;
+    color: #06660ec7;
+    font-size: 12px;
+    width: 100%;
+    
+}
+.btn-open-signup:focus{
+    border: none;
+    outline: none;
+}
+.btn-open-signup span {
+    border-bottom: 1px solid #06660ec7;
+}
+
+.form-tim-kiem-container{
+    position: relative;
+}
+.form-tim-kiem{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    left: 22px;
+    bottom: -200px;
+    width: 716px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 11px 1px rgba(156, 154, 154, 0.356);
+}
+.item-search-container{
+    padding: 16px;
+    justify-content: space-between;
+}
+.item-search{
+    width: 100%;
+    border: 1px solid gray;
+    margin: 8px;
+    padding: 8px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.openFormSearch{
+    opacity: 1;
+    visibility: visible;
+}
+
+.product:hover{
+    cursor: pointer;
+    border: 1px solid #06660e;
+}
+#menu{
+    position: absolute;
+}
+#gioHang{
+   
+    top:0px;
+    left:780px;
+    width: 60px;
+    height: 47px;
+}
+#gioHang:hover  .danhSachSanPham{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+
+}
+#img-gioHang{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+.gioHangContent{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.danhSachSanPham{
+   
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    padding: 16px;
+    left: -20px;
+    bottom: -296px;
+    width: 200px;
+    height: 300px;
+    z-index: 150;
+}
+.danhSachSanPhamContent{
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(163, 160, 160, 0.74);
+
+}
+.danhSachSanPhamContent::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+.numberItem{
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.footer-head-container{
+    background-color: #3D3D3D;
+}
+.content-mp{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(176,176,176);
+}
+.footer-head-item{
+    border-right: 1px solid gray;   
+}
+.footer-head-item:last-child{
+    border-right: none;
+}
+h4 span{
+    font-size: 16px;
+    color: #b5b5b5;
+}
+#giaGoc{
+    color: #b5b5b5;
+    text-decoration: line-through;
+}
+

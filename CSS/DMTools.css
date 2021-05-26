@@ -11,7 +11,7 @@ header{
 }
 
 .header-content{
-    position: fixed;
+    /*position: fixed; sẽ kéo khung được cố định  */
     top: 0;
     left:11.5%;
     z-index: 100;
@@ -42,6 +42,31 @@ header{
     border-bottom:1px solid rgba(0,0,0,.125) ;
 
 }
+#menu-danhmucsanpham-container{
+    background-color: white;
+    position: absolute;
+    width: 292px;
+    top: 44px;
+    left: 14px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+}
+#menu-danhmuc{
+    box-shadow: 0px 0px 11px 1px rgba(156, 154, 154, 0.356);
+    /* display: none; */
+    
+}
+#danhmuc-container{
+    
+    position: relative;
+    cursor: pointer;
+}
+#danhmuc-container:hover #menu-danhmucsanpham-container{
+    opacity: 1;
+    visibility: visible;
+    
+}
 .list-group-item{
    border:none;
    font-size: 12px;
@@ -67,11 +92,7 @@ a:hover{
 #menu-danhmucsanpham-container{
     background-color: blanchedalmond;
 }
- #menu{
-    /* display:none; */
-    
-    /* box-shadow: 5px 10px 5px 5px #f7f7f7; */
-} 
+
 
 .icon-container{
     float: right;
@@ -365,4 +386,47 @@ a:hover{
 }
 .footer-head-item:last-child{
     border-right: none;
+}
+h4 span{
+    font-size: 16px;
+    color: #b5b5b5;
+}
+#giaGoc{
+    color: #b5b5b5;
+    text-decoration: line-through;
+}
+.form-tim-kiem-container{
+    position: relative;
+}
+.form-tim-kiem{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    left: 22px;
+    bottom: -213px;
+    width: 716px;
+    height: 213px;
+    background-color: white;
+    box-shadow: 0px 0px 11px 1px rgba(156, 154, 154, 0.356);
+}
+.item-search-container{
+    padding: 0 16px;
+}
+.item-search{
+    border: 1px solid gray;
+    margin: 8px;
+    padding: 8px 0;
+    border-radius: 5px;
+    text-align: center;
+
+    
+}
+.item-search img {
+    width: 40px ;
+    height: 40px;
+}
+.openFormSearch{
+    opacity: 1;
+    visibility: visible;
 }

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATH & BODY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+
+    <link rel="shortcut icon" href="../IMG/Trang chủ/logo3.jpg">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/DMBodyCare.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header >
+        <div class="header-content row">
+            <div id="header-left" class="col-lg-3 d-flex align-items-center ">
+                <img id="logo" src="../IMG/Trang chủ/logo3.jpg" class="img-thumbnail" alt="Siêu thị mỹ phẩm">
+            </div>
+            <div class="col-lg-9  form-tim-kiem-container">
+                <div class="row">
+                    <div class="w-100 text-right"> <i class="fas fa-phone"></i>
+                        <span class="text-info">LIÊN HỆ - 0964226371</span>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-1 d-flex align-items-center">
+                        <img src="../IMG/Trang chủ/viman.webp" id="iconShip" alt="Icon Ship">
+                    </div>
+                    <div class="col-10 ">
+                        <p class="text-success mb-0">GIAO HÀNG MIỄN PHÍ</p>
+                        <p class="my-0 text-secondary free-ship">FREESHIP MỌI ĐƠN HÀNG TỪ 90K, ÁP DỤNG CHO TẤT CẢ TỪ HÀ
+                            NỘI,
+                            HCM, VÀ CÁC TỈNH THÀNH.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="row justify-content-end my-2 text-muted"> <span>CHÀO MỪNG BẠN ĐẾN VỚI BVTSHOP!</span>
+                </div>
+                <div id="control" class="row px-2 ml-2">
+                    <div class="input-group py-3">
+                        <input type="text" class="form-control h-100" placeholder="Nhập từ khóa tìm kiếm"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2"
+                            onkeyup="searchPro(value)">
+                        <div class="input-group-append">
+                            <span class="input-group-text h-100 bg-dark text-white" id="basic-addon2"><i
+                                    class="fas fa-search    "></i></span>
+                        </div>
+                        <div id=" btn-open-login" class="input-group-append mx-3">
+                            <button onclick="openModalLogin()">
+                                <span class="input-group-text h-100 bg-dark text-white" id="basic-addon2"><i
+                                        class="fas fa-user    "></i></span>
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center" id="gioHang">
+                            <div class="gioHangContent">
+                                <img id="img-gioHang" src="../IMG/Trang chủ/giohang.jpg" alt="Giỏ hàng">
+                                <span id="numberItemId" class="numberItem">0</span>
+                                <div class="danhSachSanPham">
+                                    <div class="danhSachSanPhamContent">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="formTimKiem" class="form-tim-kiem">
+                    <h5 class="m-0 px-3 py-2">Danh sách sản phẩm</h5>
+                    <div id="searchContainer" class="row w-100 m-0 item-search-container d-flex">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="w-75 m-auto">
+
+        <div class="row ">
+            <div class="col-3 d-flex align-items-center " id="danhmuc-container">
+                <div id="danhmuc">
+                    <i class="fa fa-bars text-white mr-5 " aria-hidden="true"> </i>
+                    <span class="text-white font-weight-bold mr-4"> DANH MỤC SẢN PHẨM</span>
+                    <i class="fa fa-angle-down text-white" aria-hidden="true"></i>
+                </div>
+                <div id="menu-danhmucsanpham-container" class="row">
+                    <div class="w-100 p-0 bg-white">
+                        <ul id="menu-danhmuc" class="p-0">
+                            <li class="list-group-item menu-item" id="makeup-items">
+                                <img src="../IMG/Trang chủ/makeup.jpg" class="mr-0" alt="Makeup">
+                                <a href="../HTML/DMMakeUp.html" title="Beauty tips/review">Trang điểm - Makeup</a>
+    
+                                <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    
+    
+                            </li>
+                            <li class="list-group-item menu-item">
+                                <img src="../IMG/Trang chủ/chamsocda.jpg" class="mr-0" alt="Skincare">
+                                <a href="../HTML/DMCareDa.html" title="Chăm sóc da - Skincare">Chăm sóc da - Skincare</a>
+    
+                                <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    
+                            </li>
+                            <li class="list-group-item menu-item">
+                                <img src="../IMG/Trang chủ/chamsoccothe.jpg" class="mr-0" alt="BathBody">
+                                <a href="../HTML/DMBodyCare.html" title="Chăm sóc cơ thể-Bath Body">Chăm sóc cơ thể-Bath
+                                    Body</a>
+    
+                                <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </li>
+                            <li class="list-group-item menu-item">
+                                <img src="../IMG/Trang chủ/tools.jpg" class="mr-0" alt="Tools">
+                                <a href="../HTML/DMBodyCare.html" title="Tools-Brushes">Tools-Brushes</a>
+    
+                                <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </li>
+                            <!-- <li class="list-group-item menu-item">
+                    <img src="../IMG/sanphamkhac.jpg" class="mr-0" alt="Sanphamkhac">
+                    <span>Sản phẩm khác-Others</span>
+                    <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    
+                </li>
+                <li class="list-group-item menu-item">
+                    <img src="../IMG/minisize.jpg" class="mr-0" alt="Minisize">
+                    <span>Mini size</span>
+                    <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </li>
+                <li class="list-group-item menu-item d-flex">
+                    <img src="../IMG/setquatang.jpg" class="mr-0" alt="Gift">
+                    <span>Set quà tặng - Gift</span>
+                    <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </li> -->
+    
+                        </ul>
+                    </div>
+    
+                </div>
+
+
+            </div>
+            <div class="col-lg-9 p-0">
+                <ul class="list-group d-flex align-items-center w-100 flex-row justify-content-between font-weight-bold "
+                    id="menu">
+                    <li class="list-group-item" id="trangChu">
+                        <a href="../HTML/TrangChu.html" title="Trang chủ">TRANG CHỦ</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" title="Hàng mới về">HÀNG MỚI VỀ</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" title="Khuyến mãi hôm nay">KHUYẾN MÃI HÔM NAY</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" title="Beauty tips/review">BEAUTY TIPS / REVIEW</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" title="Hệ thống cửa hàng">HỆ THỐNG CỬA HÀNG</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" title="Tuyển dụng">TUYỂN DỤNG</a>
+                    </li>
+
+
+                </ul>
+                
+            </div>
+
+        </div>
+
+        <div id="form-login">
+            <form action="">
+                <div class="d-flex justify-content-end">
+                    <button class="btn-close" type="button" onclick="closeModalLogin()"> <i class="fa fa-times"
+                            aria-hidden="true"></i> </button>
+                </div>
+                <div id="content-login" class="openContentLogin">
+                    <h5 class="mb-0">Login</h5>
+                    <p class="mt-0 mb-3 title-login">Login to your BVT shop account.</p>
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" placeholder="Email/Số điện thoại" id="email">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" placeholder="Mật khẩu" id="email">
+
+                    </div>
+                    <div class="d-flex align-item-center">
+                        <button id="btnDangNhap" class="btn btn-primary w-100" type="button"> Đăng nhập</button>
+                    </div>
+                </div>
+                <div id="content-signup" class="closeContentSignUp">
+                    <h5 class="mb-0">SignUp</h5>
+                    <p class="mt-0 mb-3 title-login">Create to your account.</p>
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" placeholder="Email/Số điện thoại" id="email">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" placeholder="Họ tên" id="email">
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" placeholder="Mật khẩu" id="email">
+
+                    </div>
+                    <div class="d-flex align-item-center">
+                        <button id="btnDangKy" class="btn btn-primary w-100" type="button"> Đăng ký</button>
+                    </div>
+                </div>
+                <button class="btn-open-signup" type="button" onclick="changeStateModal()"><span
+                        id="btnChangeStateModal">Neeed an account? Join BVT shop</span></button>
+            </form>
+        </div>
+        <div>
+            <h4 class="my-3 text-success font-weight" >BATH & BODY <span>( 6 sản phẩm )</span></h4>
+            <div class="row">
+                <div class="col ">
+                    <div class="card m-auto product" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="../IMG/Sản phẩm/sapKhuMui1.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-price text-danger">289,000 ₫</h5>
+                            <p class="care-price" id="giaGoc"><i>440,000 ₫</i></p>
+                            <p class="card-text">Sáp khử mùi Old Spice Original 85g (IP01) <br>
+                                SÁP KHỬ MÙI OLD SPICE ORIGINAL 85G (IP01)
+                            </p>
+                            <button  type="button" class="btn btn-success  w-100"  onclick="themSanPham()">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- class="card" là có khung nhỏ sẵn rồi -->
+                    <div class="card m-auto product" style="width: 18rem;">
+                        <img src="../IMG/Sản phẩm/suaTamOlay1.jpg" class="card-img-top" alt="Sữa tắm OLay">
+                        <!-- card-body sẽ tạo 1 khung hơi to và tạo khoảng cách cân bằng nhất định ở text phía trong, 
+                            card-price cũng vậy nhưng sẽ nhỏ hơn nhiều lần -->
+                        <div class="card-body">
+                            <h5 class="card-price text-danger">321,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>400,000 ₫</i></p>
+                            <!-- card-text sẽ tạo khung khi có chữ được gõ vào trong -->
+                            <p class="card-text">Sữa tắm Olay Strawberry & Mint Body Wash 650 ml <br>
+                                SỮA TẮM OLAY STRAWBERRY & MINT BODY WASH 650 ML</p>
+                           <button class="btn btn-success   w-100" type="button" onclick="themSanPham()">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card m-auto product" style="width: 18rem;">
+                        <img src="../IMG/Sản phẩm/xitKhuMuiHuongThao1.jpg" class="card-img-top" alt="Xịt khử mùi hương thảo">
+                        <div class="card-body">
+                            <h5 class="card-price text-danger">57,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>90,000 ₫</i></p>
+                            <p class="card-text">Refre Xịt khử mùi Hương Gỗ Refre Natural Woody 30ml (IP01)
+                                <br>XỊT KHỬ MÙI HƯƠNG GỖ REFRE NATURAL WOODY 30ML (IP01)
+                            </p>
+                            <button class="btn btn-success w-100" type="button" onclick="themSanPham()">Thêm vào giỏ</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col ">
+                    <div class="card m-auto product" style="width: 18rem;">
+                        <img class="card-img-top" src="../IMG/Sản phẩm/xaPhongTam1.jpg"
+                            alt="Xà phòng tắm">
+                        <div class="card-body">
+                            <h5 class="card-price text-danger">47,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>85,000 ₫</i></p>
+                            <p class="card-text">Xà phòng tắm được chiết xuất từ trà xanh Uji - Pelican<br>
+                               <br>  UJI - PELICAN MACCHA SOAP
+                            </p>
+                            <button  type="button" class="btn btn-success  w-100"  onclick="themSanPham()">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card m-auto product" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="../IMG/Sản phẩm/GelTamEmBe1.jpg"
+                            alt="Gel Tắm Em Bé">
+                        <div class="card-body">
+                            <h5 class="card-price text-danger">178,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>385,000 ₫</i></p>
+                            <p class="card-text">Gel tắm gội em bé Calliderm - nha đam 2 trong 1 <br>
+                                GEL TẮM GỘI EM BÉ CALLIDERM - NHA ĐAM 2 TRONG 1</p>
+                            <button  type="button" class="btn btn-success  w-100"  onclick="themSanPham()">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col ">
+                    <div class="card m-auto product" style="width: 18rem;">
+                        <img class="card-img-top" 
+                            src="../IMG/Sản phẩm/kemDuongTrangBody1.jpg" style="width: 286px; height: 286px;"
+                            alt="Kem Dưỡng Trắng Body">
+                        <div class="card-body">
+                            <h5 class="card-price text-danger">405,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>485,000 ₫</i></p>
+                            <p class="card-text">Kem dưỡng trắng da toàn thân White Conc Warery cream
+                                <br>
+                                <br>WHITE CONC WARERY CREAM
+                            </p>
+                            <button class="btn btn-success  w-100" onclick="themSanPham()">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="mt-5 w-100 m-auto">
+        <div class=" footer-head-container">
+
+            <div id="footer-head" class="w-75 m-auto">
+                <div class="row">
+                    <!--  -->
+                    <div class="col-3 text-secondary py-2 footer-head-item">
+                        <div class="my-2 d-flex justify-content-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-truck mr-3" aria-hidden="true"></i>
+                            </div>
+                            <div class="content-mp">
+                                <span class="text-uppercase">Miễn phí vận chuyển </span>
+                            </div>
+                        </div>
+                        <p class="text-center my-2">VỚI MỌI HÓA ĐƠN TỪ 90K</p>
+                    </div>
+                    <!--  -->
+                    <div class="col-3 text-secondary py-2 footer-head-item">
+                        <div class="my-2 d-flex justify-content-center">
+                            <div class="d-flex align-items-center">
+                                <i class=" fa fa-cog mr-3" aria-hidden="true"></i>
+                            </div>
+                            <div class="content-mp">
+                                <span class="text-uppercase">Cam kết sản phẩm </span>
+                            </div>
+                        </div>
+                        <p class="text-center my-2">Sản phẩm chính hãng</p>
+                    </div>
+                    <!--  -->
+                    <div class="col-3 text-secondary py-2 footer-head-item">
+                        <div class="my-2 d-flex justify-content-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone mr-3" aria-hidden="true"></i>
+                                
+                            </div>
+                            <div class="content-mp">
+                                <span class="text-uppercase">Ship & Order </span>
+                            </div>
+                        </div>
+                        <p class="text-center my-2">0789 695 482 - 0964 226 371</p>
+                    </div>
+                    <!--  -->
+                    <div class="col-3 text-secondary py-2 footer-head-item">
+                        <div class="my-2 d-flex justify-content-center">
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-truck mr-3" aria-hidden="true"></i>
+                            </div>
+                            <div class="content-mp">
+                                <span class="text-uppercase">Hotline</span>
+                            </div>
+                        </div>
+                        <p class="text-center my-2">Liên hệ 0988 999 989</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>

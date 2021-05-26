@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BVTShop - Siêu thị mỹ phẩm</title>
+    <title> SKIN CARE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
 
 
-    <link rel="shortcut icon" href="../IMG/logo3.jpg">
+    <link rel="shortcut icon" href="../IMG/Trang chủ/logo3.jpg">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/DMSkinCare.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -30,7 +29,7 @@
     <header >
         <div class="header-content row">
             <div id="header-left" class="col-lg-3 d-flex align-items-center ">
-                <img id="logo" src="../IMG/logo3.jpg" class="img-thumbnail" alt="Siêu thị mỹ phẩm">
+                <img id="logo" src="../IMG/Trang chủ/logo3.jpg" class="img-thumbnail" alt="Siêu thị mỹ phẩm">
             </div>
             <div class="col-lg-9  form-tim-kiem-container">
                 <div class="row">
@@ -42,7 +41,7 @@
                 </div>
                 <div class="row">
                     <div class="col-1 d-flex align-items-center">
-                        <img src="../IMG/viman.webp" id="iconShip" alt="Icon Ship">
+                        <img src="../IMG/Trang chủ/viman.webp" id="iconShip" alt="Icon Ship">
                     </div>
                     <div class="col-10 ">
                         <p class="text-success mb-0">GIAO HÀNG MIỄN PHÍ</p>
@@ -72,7 +71,7 @@
                         </div>
                         <div class="d-flex align-items-center" id="gioHang">
                             <div class="gioHangContent">
-                                <img id="img-gioHang" src="../IMG/giohang.jpg" alt="Giỏ hàng">
+                                <img id="img-gioHang" src="../IMG/Trang chủ/giohang.jpg" alt="Giỏ hàng">
                                 <span id="numberItemId" class="numberItem">0</span>
                                 <div class="danhSachSanPham">
                                     <div class="danhSachSanPhamContent">
@@ -86,17 +85,8 @@
 
                 </div>
                 <div id="formTimKiem" class="form-tim-kiem">
-                    <div class="row w-100 m-0 item-search-container d-flex">
-                        <div class="col-3 item-search">Item</div>
-                        <div class="col-3 item-search">Item</div>
-                        <div class="col-3 item-search">Item</div>
-                        <div class="col-3 item-search">Item</div>
-                        <div class="col-3 item-search">Item</div>
-                        <div class="col-3 item-search">Item</div>
-                        <div class="col-3 item-search">Item</div>
-                        <div class="col-3 item-search">Item</div>
-                        <div class="col-3 item-search">Item</div>
-                    </div>
+                    <h5 class="m-0 px-3 py-2">Danh sách sản phẩm</h5>
+                    <div id="searchContainer" class="row w-100 m-0 item-search-container d-flex">
                 </div>
             </div>
         </div>
@@ -111,7 +101,58 @@
                     <span class="text-white font-weight-bold mr-4"> DANH MỤC SẢN PHẨM</span>
                     <i class="fa fa-angle-down text-white" aria-hidden="true"></i>
                 </div>
-
+                <div id="menu-danhmucsanpham-container" class="row">
+                    <div class="w-100 p-0 bg-white">
+                        <ul id="menu-danhmuc" class="p-0">
+                            <li class="list-group-item menu-item" id="makeup-items">
+                                <img src="../IMG/Trang chủ/makeup.jpg" class="mr-0" alt="Makeup">
+                                <a href="../HTML/DMMakeUp.html" title="Trang điểm - Makeup">Trang điểm - Makeup</a>
+    
+                                <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    
+    
+                            </li>
+                            <li class="list-group-item menu-item">
+                                <img src="../IMG/Trang chủ/chamsocda.jpg" class="mr-0" alt="Skincare">
+                                <a href="../HTML/DMCareDa.html" title="Chăm sóc da - Skincare">Chăm sóc da - Skincare</a>
+    
+                                <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    
+                            </li>
+                            <li class="list-group-item menu-item">
+                                <img src="../IMG/Trang chủ/chamsoccothe.jpg" class="mr-0" alt="BathBody">
+                                <a href="../HTML/DMBodyCare.html" title="Chăm sóc cơ thể-Bath Body">Chăm sóc cơ thể-Bath
+                                    Body</a>
+    
+                                <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </li>
+                            <li class="list-group-item menu-item">
+                                <img src="../IMG/Trang chủ/tools.jpg" class="mr-0" alt="Tools">
+                                <a href="../HTML/DMBodyCare.html" title="Tools-Brushes">Tools-Brushes</a>
+    
+                                <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </li>
+                            <!-- <li class="list-group-item menu-item">
+                    <img src="../IMG/sanphamkhac.jpg" class="mr-0" alt="Sanphamkhac">
+                    <span>Sản phẩm khác-Others</span>
+                    <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    
+                </li>
+                <li class="list-group-item menu-item">
+                    <img src="../IMG/minisize.jpg" class="mr-0" alt="Minisize">
+                    <span>Mini size</span>
+                    <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </li>
+                <li class="list-group-item menu-item d-flex">
+                    <img src="../IMG/setquatang.jpg" class="mr-0" alt="Gift">
+                    <span>Set quà tặng - Gift</span>
+                    <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </li> -->
+    
+                        </ul>
+                    </div>
+    
+                </div>
 
 
             </div>
@@ -119,7 +160,7 @@
                 <ul class="list-group d-flex align-items-center w-100 flex-row justify-content-between font-weight-bold "
                     id="menu">
                     <li class="list-group-item" id="trangChu">
-                        <a href="" title="Trang chủ">TRANG CHỦ</a>
+                        <a href="../HTML/TrangChu.html" title="Trang chủ">TRANG CHỦ</a>
                     </li>
                     <li class="list-group-item">
                         <a href="" title="Hàng mới về">HÀNG MỚI VỀ</a>
@@ -141,90 +182,6 @@
                 </ul>
                 
             </div>
-
-        </div>
-
-
-        <div id="menu-danhmucsanpham-container" class="row">
-            <div class="col-3 p-0 bg-white">
-                <ul id="menu" class="p-0">
-                    <li class="list-group-item menu-item" id="makeup-items">
-                        <img src="../IMG/makeup.jpg" class="mr-0" alt="Makeup">
-                        <span>Trang điểm - Makeup</span>
-                        <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                        <div id="sub-menu-makeup">
-                            <div class="sub-menu-makeup-content">
-                                <h5 class="sub-menu-makeup-title pt-4"><a href=""> Trang điểm - Makeup</a></h5>
-                                <ul class="p-0">
-                                    <li class="list-group-item">Trang điểm mặt - FACE
-                                        <span>+</span>
-                                    </li>
-                                    <li class="list-group-item">Trang điểm môi - LIP
-                                        <span>+</span>
-                                    </li>
-                                    <li class="list-group-item">Trang điểm mắt - EYES
-                                        <span>+</span>
-                                    </li>
-                                    <li class="list-group-item">Tẩy trang - MAKEUP REMOVER
-                                        <span>+</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </li>
-                    <li class="list-group-item menu-item">
-                        <img src="../IMG/chamsocda.jpg" class="mr-0" alt="Skincare">
-                        <span>Chăm sóc da - Skincare</span>
-                        <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-
-                    </li>
-                    <li class="list-group-item menu-item">
-                        <img src="../IMG/chamsoccothe.jpg" class="mr-0" alt="BathBody">
-                        <span>Chăm sóc cơ thể-Bath Body</span>
-                        <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                    </li>
-                    <li class="list-group-item menu-item">
-                        <img src="../IMG/tools.jpg" class="mr-0" alt="Tools">
-                        <span>Tools-Brushes</span>
-                        <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                    </li>
-                    <li class="list-group-item menu-item">
-                        <img src="../IMG/sanphamkhac.jpg" class="mr-0" alt="Sanphamkhac">
-                        <span>Sản phẩm khác-Others</span>
-                        <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-
-                    </li>
-                    <li class="list-group-item menu-item">
-                        <img src="../IMG/minisize.jpg" class="mr-0" alt="Minisize">
-                        <span>Mini size</span>
-                        <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                    </li>
-                    <li class="list-group-item menu-item d-flex">
-                        <img src="../IMG/setquatang.jpg" class="mr-0" alt="Gift">
-                        <span>Set quà tặng - Gift</span>
-                        <span class="icon-container"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-9">
-                <div class="row">
-                    <div class="col-9 ">
-                        <img id="img-banner" class="m-3" src="../IMG/ezgif.com-gif-maker (1).webp" alt="">
-                    </div>
-                    <div class="col-3">
-                        <div class="row">
-                            <img id="img-banner-right" class="w-100 my-3" src="../IMG/banner-right-1.jpg" alt="">
-                        </div>
-                        <div class="row">
-                            <img id="img-banner-right-2" src="../IMG/hinh.webp" class="w-100 mb-3" alt="">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
 
         </div>
 
@@ -275,56 +232,62 @@
             </form>
         </div>
         <div>
-            <h2 class="my-3 text-success font-weight">Danh sách sản phẩm đề xuất</h2>
+            <h4 class="my-3 text-success font-weight" >SKIN CARE <span>( 6 sản phẩm )</span></h4>
             <div class="row">
                 <div class="col ">
                     <div class="card m-auto product" style="width: 18rem;">
                         <img class="card-img-top"
-                            src="../IMG/phan-nuoc-m-o-i-baby-skin-cushion-5-trong-1-mau-30-13g-3.jpg" alt="Cushion">
+                            src="../IMG/Sản phẩm/klairs_1.jpg" alt="klairs">
                         <div class="card-body">
-                            <h5 class="card-price text-danger">399,000 ₫</h5>
-                            <p class="card-text">Phấn Nước M.O.I Baby Skin Cushion 5 Trong 1 Màu 30 - 13g <br>
-                                Baby Skin Cushion SPF 50+ PA+++ (New 2021)
+                            <h5 class="card-price text-danger">289,000 ₫</h5>
+                            <p class="care-price" id="giaGoc"><i>440,000 ₫</i></p>
+                            <p class="card-text">Kem Dưỡng Ẩm Klairs Midnight Blue Claming cream <br>
+                                KLAIRS MIDNIGHT BLUE CALMING CREAM
                             </p>
                             <button  type="button" class="btn btn-success  w-100"  onclick="themSanPham()">Thêm vào giỏ</button>
                         </div>
                     </div>
                 </div>
-                <div class="col ">
+                <div class="col">
+                    <!-- class="card" là có khung nhỏ sẵn rồi -->
                     <div class="card m-auto product" style="width: 18rem;">
-                        <img class="card-img-top" src="../IMG/sua-chong-nang-duong-da-bao-ve-hoan-hao.png"
-                            alt="Sữa chống nắng">
+                        <img src="../IMG/Sản phẩm/SomeByMi1.jpg" class="card-img-top" alt="SomeByMi">
+                        <!-- card-body sẽ tạo 1 khung hơi to và tạo khoảng cách cân bằng nhất định ở text phía trong, 
+                            card-price cũng vậy nhưng sẽ nhỏ hơn nhiều lần -->
                         <div class="card-body">
-                            <h5 class="card-price text-danger">449,000 ₫</h5>
-                            <p class="card-text">Sữa Chống Nắng Anessa Dưỡng Da Bảo Vệ Hoàn Hảo 60ml <br>
-                                Perfect UV Sunscreen Skincare Milk SPF50+/PA++++
-                            </p>
-                            <button  type="button" class="btn btn-success  w-100"  onclick="themSanPham()">Thêm vào giỏ</button>
+                            <h5 class="card-price text-danger">321,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>400,000 ₫</i></p>
+                            <!-- card-text sẽ tạo khung khi có chữ được gõ vào trong -->
+                            <p class="card-text">Tinh Chất Dưỡng Da Truecica Miracle Repair <br>
+                                Some By Mi Snail Truecica Miracle Repair Serum 50ml</p>
+                           <button class="btn btn-success   w-100" type="button" onclick="themSanPham()">Thêm vào giỏ</button>
                         </div>
                     </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card m-auto product" style="width: 18rem;">
+                        <img src="../IMG/Sản phẩm/BRIGHTEN1.jpg" class="card-img-top" alt="BRIGHTEN">
+                        <div class="card-body">
+                            <h5 class="card-price text-danger">308,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>385,000 ₫</i></p>
+                            <p class="card-text">Nước cân bằng độ ẩm cho da Miri Brightening Toner 200ML
+                                <br> <br> MIRI BRIGHTENING TONER 200ML
+                            </p>
+                            <button class="btn btn-success w-100" type="button" onclick="themSanPham()">Thêm vào giỏ</button>
+                        </div>
 
-                </div>
-                <div class="col ">
-                    <div class="card m-auto product" style="width: 18rem;">
-                        <img class="card-img-top" src="../IMG/son-duong-silky-girl-co-mau-07-orchid.jpg" alt="Cushion">
-                        <div class="card-body">
-                            <h5 class="card-price text-danger">99,000 ₫</h5>
-                            <p class="card-text">Son Dưỡng SILKYGIRL Có Màu 07 Orchid <br>
-                                Moisture Boost Lipcolor Balm <br>
-                                SILKYGIRL
-                            </p>
-                            <button  type="button" class="btn btn-success  w-100"  onclick="themSanPham()">Thêm vào giỏ</button>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col ">
                     <div class="card m-auto product" style="width: 18rem;">
-                        <img class="card-img-top" src="../IMG/nuoc-hoa-hong-some-by-mi-cho-da-mun-150ml.jpg"
-                            alt="Cushion">
+                        <img class="card-img-top" src="../IMG/Sản phẩm/nuocHoaHongSomeByMi2.jpg"
+                            alt="nuocHoaHongSomeByMi">
                         <div class="card-body">
                             <h5 class="card-price text-danger">194,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>285,000 ₫</i></p>
                             <p class="card-text">Nước Hoa Hồng Some By Mi AHA-BHA-PHA Cho Da Mụn 150ml<br>
                                 Miracle Toner AHA-BHA-PHA
                             </p>
@@ -335,10 +298,11 @@
                 <div class="col ">
                     <div class="card m-auto product" style="width: 18rem;">
                         <img class="card-img-top"
-                            src="../IMG/hop-8-mieng-mat-na-naruko-tram-tra-kiem-soat-dau-va-giam-mun-26ml-mieng-01_img_300x300_b798dd_fit_center.jpg"
-                            alt="Sữa chống nắng">
+                            src="../IMG/Sản phẩm/MatNaNaruko1.jpg"
+                            alt="MatNaNaruko">
                         <div class="card-body">
                             <h5 class="card-price text-danger">178,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>385,000 ₫</i></p>
                             <p class="card-text">Mặt Nạ Naruko Tràm Trà Kiềm Dầu, Giảm Mụn (Hộp 8 Miếng) <br>
                                 Tea Tree Shine Control and Blemish Clear Mask</p>
                             <button  type="button" class="btn btn-success  w-100"  onclick="themSanPham()">Thêm vào giỏ</button>
@@ -348,14 +312,15 @@
                 </div>
                 <div class="col ">
                     <div class="card m-auto product" style="width: 18rem;">
-                        <img class="card-img-top"
-                            src="../IMG/combo-silkygirl-phan-nuoc-spf25-01-light-son-kem-li-mau-cam-07-dolly-5-8ml_img_300x300_b798dd_fit_center.jpg"
-                            alt="Cushion">
+                        <img class="card-img-top "
+                            src="../IMG/Sản phẩm/Bioderma1.png" style="height: 18rem;"
+                            alt="Bioderma">
                         <div class="card-body">
-                            <h5 class="card-price text-danger">413,000 ₫</h5>
-                            <p class="card-text">Combo SILKYGIRL Phấn Nước SPF25 02 Natural + Son Kem Lì Màu Đỏ 09 Rouge
-                                5.8ml
-                                Gen Matte Cushion Foundation</p>
+                            <h5 class="card-price text-danger">405,000 ₫</h5>
+                            <p class="card-price" id="giaGoc"><i>485,000 ₫</i></p>
+                            <p class="card-text">Chống Nắng Dạng Lỏng Bioderma Photoderm Max Aquafluide
+                                <br>BIODERMA PHOTODERM MAX AQUAFLUIDE SPF50+
+                            </p>
                             <button class="btn btn-success  w-100" onclick="themSanPham()">Thêm vào giỏ</button>
                         </div>
                     </div>
